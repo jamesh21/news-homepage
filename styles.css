@@ -8,12 +8,19 @@ body {
     padding: 0px;
     min-height: 100vh;
 }
+
 p {
     font-size: 15px;
+    font-weight: 400px;
+    margin: 0px;
+    color: hsl(236, 13%, 42%);
+    line-height: 2;
 }
+
 .container {
-    margin: 25px 8%;
+    margin: 50px 8%;
 }
+
 .nav-bar {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -48,4 +55,99 @@ p {
 
 .nav-right li a:hover {
     color: hsl(5, 85%, 63%);
+}
+
+.mid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 35px;
+    margin-bottom: 65px;
+}
+
+.mid-left-container {
+    display: grid;
+    grid-template-rows: 4fr 2fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner-section {
+    background-image: url("assets/images/image-web-3-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 40px;
+}
+
+.title-section {
+    font-weight: 800;
+    font-size: 60px;
+    padding-right: 40px;
+    line-height: 1;
+    margin: 0px;
+}
+
+.info-section {
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button {
+    border-radius: 0px;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    width: 50%;
+    height: 50px; 
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-width: 0px;
+    margin-top: 40px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.mid-right-container {
+    background-color: hsl(240, 100%, 5%)
+}
+
+.new-article-header {
+    color: hsl(35, 77%, 62%);
+    font-size: 40px;
+    padding-left: 25px;
+}
+
+.article-list {
+    padding-left: 0px;
+    list-style: none;
+    margin: 0px 30px;
+}
+
+.article-list li {
+    margin: 30px 0px;
+}
+
+.article-list hr {
+    border: none;
+    background-color: hsl(236, 13%, 42%);
+    height: 1px;
+}
+
+.article-header {
+    color: hsl(36, 100%, 99%);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.article-header:hover {
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+}
+
+.article-list p {
+    color: hsl(233, 8%, 79%);
 }
