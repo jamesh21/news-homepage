@@ -22,12 +22,20 @@ p {
 
 .container {
     margin: 50px 8%;
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 4%;
+    }
 }
 
 .nav-bar {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-bottom: 55px;
+    & hamburger-icon {
+        display: none;
+    }
 }
 
 .nav-left {
@@ -66,12 +74,22 @@ p {
     grid-template-columns: 2fr 1fr;
     grid-gap: 35px;
     margin-bottom: 85px;
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
 }
 
 .mid-left-container {
     display: grid;
-    grid-template-rows: 4fr 2fr;
+    grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 480px) {
+        grid-template-rows: 3fr 1fr 2fr;
+        grid-template-columns: 1fr;
+    }
 }
 
 .banner-section {
@@ -81,6 +99,12 @@ p {
     grid-column-start: 1;
     grid-column-end: 4;
     margin-bottom: 35px;
+
+    @media (max-width: 480px) {
+        background-image: url("assets/images/image-web-3-mobile.jpg");
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 }
 
 .title-section {
@@ -88,6 +112,9 @@ p {
     font-size: 60px;
     padding-right: 40px;
     line-height: 1;
+    @media (max-width: 480px) {
+        font-size: 2.5rem;
+    }
 }
 
 .info-section {
@@ -95,6 +122,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (max-width: 480px) {
+        margin-top: 1.5em;
+        justify-content: normal;
+    }
 }
 
 .button {
@@ -165,6 +196,11 @@ p {
         list-style: none;
         padding-left: 0px;
         min-height: 140px;
+        
+        @media (max-width: 480px) {
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 1.5em;
+        }
     }
     & h2 {
         color: hsl(233, 8%, 79%);
